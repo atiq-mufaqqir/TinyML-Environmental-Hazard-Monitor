@@ -258,7 +258,7 @@ Testing results:
 
 # PCB Design
 
-[PCB Design](docs/PCB%20layout.png)
+![PCB Layout](docs/PCB%20layout.png)
 
 A custom PCB was designed using **KiCad** to improve hardware integration.
 
@@ -283,23 +283,40 @@ PCB features:
 # Repository Structure
 
 ```
-TinyML-Indoor-Monitoring/
-
 │
-├── Firmware/
-│   ├── STM32_Project/
-│   └── Sensor_Drivers/
+├── Core/
+│ ├── Inc/
+│ └── Src/
+│ └── STM32 application firmware
 │
-├── Machine_Learning/
-│   ├── Dataset/
-│   ├── EdgeImpulse/
-│   └── Training/
+├── Drivers/
+│ └── STM32 HAL libraries and sensor drivers
 │
-├── PCB/
-│   ├── KiCad_Project/
-│   └── Schematics/
+├── Release/
+│ └── Compiled firmware build files
 │
-├── Documentation/
+├── docs/
+│ └── Project documentation and images
+│
+├── media/
+│ └── Project demonstration images/videos
+│
+├── ml/
+│ ├── Dataset/
+│ ├── Edge_Impulse/
+│ └── Model training files
+│
+├── pcb/
+│ └── KiCad schematic and PCB design files
+│
+├── TEST.ioc
+│ └── STM32CubeMX configuration file
+│
+├── .project
+├── .cproject
+│
+├── STM32L476RGTX_FLASH.ld
+├── STM32L476RGTX_RAM.ld
 │
 └── README.md
 ```
