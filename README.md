@@ -398,3 +398,8 @@ The final prototype successfully collected environmental data, trained a classif
 # Author
 
 Atiq Mufaqqir
+
+## License
+
+This project is intended for educational purposes as part of the ELEC3875 Individual Engineering Project.
+
